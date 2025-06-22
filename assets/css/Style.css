@@ -228,7 +228,7 @@ footer .Main p span {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 30%;
+  flex-basis: 26%;
 }
 
 .Section_2 .pic img {
@@ -241,7 +241,7 @@ footer .Main p span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-basis: 70%;
+  flex-basis: 60%;
 }
 
 .Section_2 .UI-UX-Designer {
@@ -367,10 +367,12 @@ footer .Main p span {
 }
 
 .Section_2 .Facts {
-  width: 85%;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+
 
 .Section_2 .Facts h1 {
   font-size: 3rem;
@@ -629,7 +631,7 @@ header .logo {
   /* -------------------------------------------------  About  */
 
 .Section_2 .pic {
-  flex-basis: 80%;
+  flex-basis: 100%;
   padding: 3rem;
 }
 
@@ -637,25 +639,27 @@ header .logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-basis: 90%;
+  flex-basis: 100%;
 }
 
 .Section_2 .UI-UX-Designer {
-  flex-basis: 90%;
+  flex-basis: 100%;
 }
 
 .Section_2 .Data {
-  flex-basis: 90%;
+  flex-basis: 100%;
 }
 
 .Section_2 .p {
-  flex-basis: 90%;
+  flex-basis: 100%;
 }
 
 .Section_2 .First {
   flex-basis: 50%;
 }
-
+.Section_2 .Facts .heading{
+  flex-basis: 50%;
+}
 .Section_2 .Second {
   flex-basis: 50%;
 }
@@ -744,6 +748,12 @@ header .logo {
   .heading {
   padding: 1rem 0rem;
 }
+.Section_2 .intro {
+  padding: 0.5rem;
+}
+.Section_2 {
+  padding: 0rem;
+}
 .Section_2 .pic {
   flex-basis: 100%;
   padding: 1rem 0rem;    
@@ -785,15 +795,15 @@ header .logo {
 
 .Section_2 .Facts {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
+    padding: 0rem 1rem;
 }
-
 .Section_2 .Facts .heading{
-  padding: 0rem 0.5rem;
+  flex-basis: 100%;
+  padding: 1.4rem;
 }
   .Slider {
-  height: auto;
+  height: 50vh;
 }
 
 [data-aos] {
