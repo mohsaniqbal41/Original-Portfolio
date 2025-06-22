@@ -786,11 +786,7 @@ header .logo {
 .Section_2 .Facts {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-}
-
-.Section_2 .Facts h1 {
-  font-size: 3rem;
+  justify-content: center;
 }
 
 .Section_2 .Facts .heading{
