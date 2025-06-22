@@ -739,4 +739,71 @@ header .logo {
     transition: none !important;
   }
 }
+@media (max-width: 600px) {
+  /* -------------------------------------------------  About  */
+  .heading {
+  padding: 1rem 0rem;
+}
+.Section_2 .pic {
+  flex-basis: 100%;
+  padding: 1rem 0rem;    
+}
+
+.Section_2 .Web_Developer_Text {
+  flex-basis: 100%;
+  padding: 0rem; 
+}
+
+.Section_2 .UI-UX-Designer {
+  flex-basis: 100%;
+  padding: 0rem; 
+}
+
+.Section_2 .Data {
+  flex-basis: 100%;
+  padding: 0rem; 
+}
+ .Section_2 .skills .p1 {
+  flex-basis: 100%;
+  padding: 0rem;
+}
+.Section_2 .skills {
+  padding: 1.5rem;
+}
+.Section_2 .p {
+  flex-basis: 100%;
+  padding: 0rem; 
+}
+
+.Section_2 .skills .p2 {
+  flex-basis: 100%;
+  padding: 0rem;
+}
+.Section_2 .Fact {
+  justify-content: space-between;
+}
+
+.Section_2 .Facts {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Section_2 .Facts h1 {
+  font-size: 3rem;
+}
+
+.Section_2 .Facts .heading{
+  padding: 0rem 1rem;
+}
+  .Slider {
+  height: 55vh;
+}
+
+[data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
 
