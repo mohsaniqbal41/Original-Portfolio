@@ -790,10 +790,10 @@ header .logo {
 }
 
 .Section_2 .Facts .heading{
-  padding: 0rem 1rem;
+  padding: 0rem 0.5rem;
 }
   .Slider {
-  height: 55vh;
+  height: auto;
 }
 
 [data-aos] {
