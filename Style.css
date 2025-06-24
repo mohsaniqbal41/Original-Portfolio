@@ -63,11 +63,29 @@ header .Menu ul li {
 }
 
 header .Menu ul li a {
+  position: relative;
   text-decoration: none;
   color: #111;
   font-weight: normal;
   padding: 0rem 1rem;
   box-sizing: border-box;
+  display: inline-block;
+}
+
+header .Menu ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0.8rem;
+  bottom: -7px;
+  width: 0;
+  height: 2px;
+  background-color: #34b7a7;
+  transition: width 0.3s ease-in-out;
+}
+
+header .Menu ul li a:hover::after {
+  height: 0.3vh;
+  width: 2rem;
 }
 
 header .Menu .home {
@@ -93,6 +111,7 @@ header nav ul li:hover .Dropdown {
 
 header nav .Menu ul li :hover {
   color: #34b7a7;
+ 
 }
 
 header .line {
@@ -147,7 +166,7 @@ footer .Main p span {
 .Section_1 h1 {
   font-family: none;
   font-weight: bold;
-  font-size: 2.2rem;
+  font-size: 2.7rem;
   letter-spacing: 0px;
   color: #111;
   padding: 0.5rem;
@@ -160,9 +179,10 @@ footer .Main p span {
   color: #111;
 }
 
-.Section_1 .Text button {
+.Section_1 .Text a {
   background-color: #34b7a7;
   color: #fff;
+  text-decoration: none;
   font-size: 13px;
   font-weight: normal;
   text-transform: uppercase;
@@ -176,7 +196,7 @@ footer .Main p span {
   box-sizing: border-box;
 }
 
-.Section_1 .Text button:hover {
+.Section_1 .Text a:hover {
   background-color: #39c6b5;
 }
 
@@ -575,6 +595,7 @@ footer .Main p span {
   margin-top: 0.6rem;
   padding: 14px 12px;
   box-sizing: border-box;
+  resize: none;
 }
 
 .Section_3 .button {
@@ -590,15 +611,124 @@ footer .Main p span {
   border: none;
   border-radius: 2rem;
   cursor: pointer;
-  
+
 }
 
 .Section_3 .btn:hover {
   background-color: #7ed6df;
 }
 
+/* ------------------------------------------------------Resume */
 
+.Resume {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0rem;
+  box-sizing: border-box;
+}
 
+.Resume .P1 {
+  flex-basis: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.Resume .P1 .Sumary {
+  flex-basis: 100%;
+  border-left: 2px solid #00bcd4;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.Resume .P1 .Education {
+  flex-basis: 100%;
+  border-left: 2px solid #00bcd4;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.Resume .P1 .Experience {
+  flex-basis: 100%;
+  border-left: 2px solid #00bcd4;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.Resume .heading {
+  flex-basis: 10%;
+  padding: 0px;
+}
+
+.Resume .P1 .Circule {
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  top: 0;
+  left: -9px;
+  background: #fff;
+  border: 3px solid #00bcd4;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.Resume .P1 .Text {
+  color: #444;
+  font-size: 0.95rem;
+  padding: 1.2rem 0rem;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Resume .P1 .Text h4 {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.Resume .P1 .Text p {
+  color: #555;
+  font-size: 0.92rem;
+  margin: 0.4rem 0;
+}
+
+.Resume .P1 .Text ul {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  box-sizing: border-box;
+}
+
+.Resume .P1 .Text ul li {
+  margin-bottom: 0.3rem;
+}
+
+.Resume .heading h3 {
+  color: #222;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* -----------------------------------------------   Portfolio  ---- */
+.Portfolio{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Portfolio .p1 .img1 img{
+  height: 20vh;
+  width: 10rem;
+}
 
 
 
@@ -607,62 +737,69 @@ footer .Main p span {
 
 /* --------------------------------------------------------------- */
 @media(max-width:1055px) {
-header .Name {
-  height: 0px;
-  opacity: 0;
-  flex-basis: 0%;
+  header .Name {
+    height: 0px;
+    opacity: 0;
+    flex-basis: 0%;
+  }
+
+  header .Menu {
+    flex-basis: 100%;
+  }
+
+  header .logo {
+    height: 0px;
+    opacity: 0;
+    flex-basis: 0%;
+  }
+
 }
 
-header .Menu {
-  flex-basis: 100%;
-}
-header .logo {
-  height: 0px;
-  opacity: 0;
-  flex-basis: 0%;
-}
-
-}
 @media (max-width: 992px) {
-  /* -------------------------------------------------  Index  */ 
-  .Section_1 .Text{
+
+  /* -------------------------------------------------  Index  */
+  .Section_1 .Text {
     padding: 2rem;
   }
+
   /* -------------------------------------------------  About  */
 
-.Section_2 .pic {
-  flex-basis: 100%;
-  padding: 3rem;
-}
+  .Section_2 .pic {
+    flex-basis: 100%;
+    padding: 3rem;
+  }
 
-.Section_2 .Web_Developer_Text {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-basis: 100%;
-}
+  .Section_2 .Web_Developer_Text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 100%;
+  }
 
-.Section_2 .UI-UX-Designer {
-  flex-basis: 100%;
-}
+  .Section_2 .UI-UX-Designer {
+    flex-basis: 100%;
+  }
 
-.Section_2 .Data {
-  flex-basis: 100%;
-}
+  .Section_2 .Data {
+    flex-basis: 100%;
+  }
 
-.Section_2 .p {
-  flex-basis: 100%;
-}
+  .Section_2 .p {
+    flex-basis: 100%;
+  }
 
-.Section_2 .First {
-  flex-basis: 50%;
-}
-.Section_2 .Facts .heading{
-  flex-basis: 50%;
-}
-.Section_2 .Second {
-  flex-basis: 50%;
-}
+  .Section_2 .First {
+    flex-basis: 50%;
+  }
+
+  .Section_2 .Facts .heading {
+    flex-basis: 50%;
+  }
+
+  .Section_2 .Second {
+    flex-basis: 50%;
+  }
+
   /* -------------------------------------------------  Contacts  */
   .Section_3 .Adress_And_form {
     padding: 1rem;
@@ -682,12 +819,12 @@ header .logo {
 
   .Section_3 .Name {
     flex-basis: 100%;
-    padding: 0;
+    padding: .5rem 0rem;
   }
 
   .Section_3 .Email {
     flex-basis: 100%;
-    padding: 0;
+    padding: 0.5rem 0rem;
   }
 
   .Section_3 .button {
@@ -705,111 +842,133 @@ header .logo {
   .Section_3 .Msg {
     height: 20vh;
   }
+
   .Slider {
-  height: 50vh;
+    height: 50vh;
+  }
+  /*----------------------------------------------------- Resume */
+  .Resume .P1 {
+  flex-basis: 80%;
 }
 }
+
 @media (max-width: 760px) {
+
   /* -------------------------------------------------  About  */
   .heading {
-  padding: 1rem 0rem;
-}
-.Section_2 .pic {
-  flex-basis: 100%;
-  padding: 1rem;
-}
+    padding: 1rem 0rem;
+  }
 
-.Section_2 .First {
-  flex-basis: 100%;
-}
+  .Section_2 .pic {
+    flex-basis: 100%;
+    padding: 1rem;
+  }
 
-.Section_2 .Second {
-  flex-basis: 100%;
-}
- .Section_2 .skills .p1 {
-  flex-basis: 90%;
-  padding: 0rem;
-}
-.Section_2 .skills {
-  padding: 2rem;
-}
-.Section_2 .skills .p2 {
-  flex-basis: 90%;
-  padding: 0rem;
-}
-[data-aos] {
+  .Section_2 .First {
+    flex-basis: 100%;
+  }
+
+  .Section_2 .Second {
+    flex-basis: 100%;
+  }
+
+  .Section_2 .skills .p1 {
+    flex-basis: 90%;
+    padding: 0rem;
+  }
+
+  .Section_2 .skills {
+    padding: 2rem;
+  }
+
+  .Section_2 .skills .p2 {
+    flex-basis: 90%;
+    padding: 0rem;
+  }
+
+  [data-aos] {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
   }
 }
+
 @media (max-width: 600px) {
+
   /* -------------------------------------------------  About  */
   .heading {
-  padding: 1rem 0rem;
-}
-.Section_2 .intro {
-  padding: 0.5rem;
-}
-.Section_2 {
-  padding: 0rem;
-}
-.Section_2 .pic {
-  flex-basis: 100%;
-  padding: 1rem 0rem;    
-}
+    padding: 1rem 0rem;
+  }
 
-.Section_2 .Web_Developer_Text {
-  flex-basis: 100%;
-  padding: 0rem; 
-}
+  .Section_2 .intro {
+    padding: 0.5rem;
+  }
 
-.Section_2 .UI-UX-Designer {
-  flex-basis: 100%;
-  padding: 0rem; 
-}
+  .Section_2 {
+    padding: 0rem;
+  }
 
-.Section_2 .Data {
-  flex-basis: 100%;
-  padding: 0rem; 
-}
- .Section_2 .skills .p1 {
-  flex-basis: 100%;
-  padding: 0rem;
-}
-.Section_2 .skills {
-  padding: 1.5rem;
-}
-.Section_2 .p {
-  flex-basis: 100%;
-  padding: 0rem; 
-}
+  .Section_2 .pic {
+    flex-basis: 100%;
+    padding: 1rem 0rem;
+  }
 
-.Section_2 .skills .p2 {
-  flex-basis: 100%;
-  padding: 0rem;
-}
-.Section_2 .Fact {
-  justify-content: space-between;
-}
+  .Section_2 .Web_Developer_Text {
+    flex-basis: 100%;
+    padding: 0rem;
+  }
 
-.Section_2 .Facts {
-  width: 100%;
-  justify-content: space-between;
+  .Section_2 .UI-UX-Designer {
+    flex-basis: 100%;
+    padding: 0rem;
+  }
+
+  .Section_2 .Data {
+    flex-basis: 100%;
+    padding: 0rem;
+  }
+
+  .Section_2 .skills .p1 {
+    flex-basis: 100%;
+    padding: 0rem;
+  }
+
+  .Section_2 .skills {
+    padding: 1.5rem;
+  }
+
+  .Section_2 .p {
+    flex-basis: 100%;
+    padding: 0rem;
+  }
+
+  .Section_2 .skills .p2 {
+    flex-basis: 100%;
+    padding: 0rem;
+  }
+
+  .Section_2 .Fact {
+    justify-content: space-between;
+  }
+
+  .Section_2 .Facts {
+    width: 100%;
+    justify-content: space-between;
     padding: 0rem 1rem;
-}
-.Section_2 .Facts .heading{
-  flex-basis: 100%;
-  padding: 1.4rem;
-}
-  .Slider {
-  height: 50vh;
-}
+  }
 
-[data-aos] {
+  .Section_2 .Facts .heading {
+    flex-basis: 100%;
+    padding: 1.4rem;
+  }
+
+  .Slider {
+    height: 50vh;
+  }
+
+  [data-aos] {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
   }
 }
-
