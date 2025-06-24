@@ -72,21 +72,24 @@ header .Menu ul li a {
   display: inline-block;
 }
 
-header .Menu ul li a::after {
-  content: '';
+
+header .Menu ul li a::after{
+  content:'';
+  height: 2px;
+  width: 0;
   position: absolute;
   left: 0.8rem;
   bottom: -7px;
-  width: 0;
-  height: 2px;
-  background-color: #34b7a7;
+  background-color: #34b7a7 ;
   transition: width 0.3s ease-in-out;
 }
 
-header .Menu ul li a:hover::after {
+header .Menu ul li a:hover::after{
   height: 0.3vh;
   width: 2rem;
 }
+
+
 
 header .Menu .home {
   color: #34b7a7;
@@ -722,15 +725,89 @@ footer .Main p span {
 
 /* -----------------------------------------------   Portfolio  ---- */
 .Portfolio{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.Portfolio .p1 .img1 img{
-  height: 20vh;
-  width: 10rem;
+.Portfolio .Main{
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
-
-
+.Portfolio .Main img{
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.Portfolio .Main .img_1 {
+  height: auto;
+  flex-basis: 33%;
+}
+.Portfolio .Main .img_2 {
+  height: auto;
+ flex-basis: 33%;
+}
+.Portfolio .Main .img_3 {
+  height: auto;
+  flex-basis: 33%;
+}
+.Portfolio .Main .img_4 {
+  height: auto;
+  flex-basis: 33%;
+}
+.Portfolio .Main .img_5 {
+  height: auto;
+ flex-basis: 33%;
+ position: absolute;
+ top: 40vh;
+ left: 33%;
+ z-index: 3;
+}
+.Portfolio .Main .img_6 {
+  height: auto;
+  flex-basis: 33%;
+  position: absolute;
+  top: 33vh;
+  right: 1%;
+  z-index: 3;
+}
+.Portfolio .Main .img_7 {
+  height: auto;
+  flex-basis: 33%;
+  position: absolute;
+  bottom: 18vh;
+  right: 1%;
+  z-index: 3;
+}
+.Portfolio .Main .img_1 img{
+  height: 53vh;
+  width: 100%;
+}
+.Portfolio .Main .img_2 img{
+  height: 40vh;
+  width: 100%;
+}
+.Portfolio .Main .img_3 img{
+  height: 33vh;
+  width: 100%;
+}
+.Portfolio .Main .img_4 img{
+  height: 67vh;
+  width: 100%;
+}
+.Portfolio .Main .img_5 img{
+  height: 67vh;
+  width: 28rem;
+}
+.Portfolio .Main .img_6 img{
+  height: 35vh;
+  width: 28rem;
+}
+.Portfolio .Main .img_7 img{
+  height: 35vh;
+  width: 28rem;
+}
 
 
 
