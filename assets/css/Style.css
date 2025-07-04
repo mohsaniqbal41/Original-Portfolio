@@ -139,6 +139,14 @@ header .line {
   background-color: #34b7a7;
 }
 
+.modal .line {
+  height: 0.3vh;
+  width: 2rem;
+  margin-left: 0.8rem;
+  margin-top: 0.3rem;
+  background-color: #34b7a7;
+}
+
 /* --------------------------------------------------------Footer */
 footer {
   height: 23.5vh;
@@ -510,9 +518,10 @@ footer .Main p span {
 }
 
 .Section_3 .addres {
+  height: auto;
   flex-basis: 100%;
   display: flex;
-  padding: .8rem 0rem;
+  padding: .0rem 0rem;
   box-sizing: border-box;
 }
 
@@ -527,7 +536,7 @@ footer .Main p span {
 }
 
 .Section_3 .addres .data p {
-  padding-top: 0.3rem;
+  padding-top: 0.1rem;
   box-sizing: border-box;
 }
 
@@ -620,7 +629,7 @@ footer .Main p span {
 
 .Section_3 .btn {
   height: 6vh;
-  width: 8rem;
+  width: 10rem;
   background-color: #34b7a7;
   color: #fff;
   font-weight: bold;
