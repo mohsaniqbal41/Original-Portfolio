@@ -12,7 +12,6 @@ header nav {
   height: 10vh;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #ECEBE9;
@@ -22,7 +21,7 @@ header nav {
 }
 
 
-header nav ul li .Dropdown {
+header ul li .Dropdown {
   width: 10%;
   text-align: left;
   position: absolute;
@@ -33,10 +32,21 @@ header nav ul li .Dropdown {
   padding: 1rem;
   box-sizing: border-box;
 }
+.modal-body ul li .Dropdown {
+  width: 10%;
+  text-align: left;
+  position: relative;
+  display: none;
+  background-color: #ffffff;
+  font-size: 1rem;
+  line-height: 2.3;
+  padding: 1rem;
+  box-sizing: border-box;
+}
 
 
 header .Name {
-  flex-basis: 20%;
+ 
   text-align: left;
 }
 
@@ -54,15 +64,13 @@ header .Menu ul {
   align-items: center;
 }
 
-header .Menu {
-  flex-basis: 60%;
-}
 
-header .Menu ul li {
+
+.Menu ul li {
   list-style-type: none;
 }
 
-header .Menu ul li a {
+.Menu ul li a {
   position: relative;
   text-decoration: none;
   color: #111;
@@ -72,8 +80,12 @@ header .Menu ul li a {
   display: inline-block;
 }
 
+.modal-body .Menu ul li a {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
 
-header .Menu ul li a::after{
+.Menu ul li a::after{
   content:'';
   height: 2px;
   width: 0;
@@ -84,19 +96,18 @@ header .Menu ul li a::after{
   transition: width 0.3s ease-in-out;
 }
 
-header .Menu ul li a:hover::after{
+.Menu ul li a:hover::after{
   height: 0.3vh;
   width: 2rem;
 }
 
 
 
-header .Menu .home {
+.Menu .home {
   color: #34b7a7;
 }
 
 header .logo {
-  flex-basis: 20%;
   text-align: right;
   padding: 0rem 1rem;
   box-sizing: border-box;
@@ -108,11 +119,14 @@ header .logo i {
   box-sizing: border-box;
 }
 
-header nav ul li:hover .Dropdown {
+header ul li:hover .Dropdown {
+  display: block;
+}
+.modal-body ul li:hover .Dropdown {
   display: block;
 }
 
-header nav .Menu ul li :hover {
+header .Menu ul li :hover {
   color: #34b7a7;
  
 }
@@ -205,7 +219,7 @@ footer .Main p span {
 
 /* ------------------------------------------------------------About*/
 .fix_hight {
-  height: 15vh;
+  height: 10vh;
   width: 100%;
 }
 
@@ -409,7 +423,6 @@ footer .Main p span {
 .Slider .carousel-cell {
   height: auto;
   width: 80%;
-  background: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -813,7 +826,7 @@ footer .Main p span {
 
 
 /* --------------------------------------------------------------- */
-@media(max-width:1055px) {
+/* @media(max-width:1055px) {
   header .Name {
     height: 0px;
     opacity: 0;
@@ -830,7 +843,7 @@ footer .Main p span {
     flex-basis: 0%;
   }
 
-}
+} */
 
 @media (max-width: 992px) {
 
