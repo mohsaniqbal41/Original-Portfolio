@@ -233,6 +233,7 @@ footer .Main p span {
     0 8px 0 0 #064e3b,
     0 8px 16px 0 rgba(5,150,105,0.5);
   overflow: hidden;
+  
 }
 
 .squishy-tech::before {
@@ -272,7 +273,7 @@ footer .Main p span {
 
 /* ------------------------------------------------------------About*/
 .fix_hight {
-  height: 10vh;
+  height: 4vh;
   width: 100%;
 }
 
@@ -304,6 +305,8 @@ footer .Main p span {
 
 .heading p {
   color: #6c757d;
+  padding: 0rem 4rem;
+  box-sizing: border-box;
 }
 
 .Section_2 .intro {
@@ -924,6 +927,57 @@ footer .Main p span {
   height: 35vh;
   width: 28rem;
 }
+
+/* -------------------------------------------------------------------------Projects---------------------------------------------------- */
+
+.container .Game_1_img,
+.container .Game_2_img,
+.container .Game_3_img,
+.container .Game_4_img,
+.container .Game_5_img,
+.container .Game_6_img,
+.container .Game_7_img,
+.container .Game_8_img {
+  height: 30vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+
+.Game_1_img {
+  background-image: url("../media/OpenWorld_Game.png");
+}
+.Game_2_img {
+  background-image: url("../media/Police_Chase.png");
+}
+.Game_3_img {
+  background-image: url("../media/Police_Chase.png");
+}
+.Game_4_img {
+  background-image: url("../media/Jeep_Game.png");
+}
+.Game_5_img {
+  background-image: url("../media/Coach_Bus.jpg");
+}
+.Game_6_img {
+  background-image: url("../media/Heli-SS.png");
+}
+.Game_7_img {
+  background-image: url("../media/Mud_Truck.png");
+}
+.Game_8_img {
+  background-image: url("../media/US_Car.png");
+}
+
+
+
+
+
+
 
 
 
