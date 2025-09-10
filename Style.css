@@ -180,7 +180,7 @@ footer .Main p span {
 .Section_1 {
   height: 100vh;
   width: 100%;
-  background-image: url("../media/Background_1.jpg");
+  background-image: url("../media/Background_1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -949,25 +949,25 @@ footer .Main p span {
 
 
 .Game_1_img {
-  background-image: url("../media/OpenWorld_Game.png");
+  background-image: url("../media/OpenWorld_Game.webp");
 }
 .Game_2_img {
-  background-image: url("../media/Police_Chase.png");
+  background-image: url("../media/Airplane.jpg");
 }
 .Game_3_img {
-  background-image: url("../media/Police_Chase.png");
+  background-image: url("../media/Police_Chase.webp");
 }
 .Game_4_img {
-  background-image: url("../media/Jeep_Game.png");
+  background-image: url("../media/Jeep_Game.webp");
 }
 .Game_5_img {
-  background-image: url("../media/Coach_Bus.jpg");
+  background-image: url("../media/Coach_Bus.webp");
 }
 .Game_6_img {
-  background-image: url("../media/Heli-SS.png");
+  background-image: url("../media/Heli-SS.webp");
 }
 .Game_7_img {
-  background-image: url("../media/Mud_Truck.png");
+  background-image: url("../media/Mud_Truck.webp");
 }
 .Game_8_img {
   background-image: url("../media/US_Car.png");
